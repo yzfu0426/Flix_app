@@ -51,6 +51,7 @@ class SuperheroDetailsViewController: UIViewController {
         // Pass the selected object to the new view controller.
         let new_vc = segue.destination as! SuperheroViedoViewController
         new_vc.movie = movie
+        new_vc.id = "\(movie["id"]!)"
         
         
     }
