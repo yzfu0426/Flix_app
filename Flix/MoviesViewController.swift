@@ -43,6 +43,8 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
              }
         }
         task.resume()
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 187 
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
